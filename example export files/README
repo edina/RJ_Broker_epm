@@ -1,0 +1,10 @@
+This package includes 4 sample files which show the range of metadata that the Repository Junction Broker can export:
+
+323.zip: a EuropePMC record with good funder & grant-code information
+337.zip: My test record for Repnet. Interesting because one of the documents contains 4 files... and there is embargo information as well
+427.zip: a record from nature that has embargoed records, exported to someone who has not signed up to accept enbargoed data - the existence of the files is given, but the files themselves are not
+467.zip: A EuropePMC record with multiple URLs to off-site full-text copies
+
+To test deposits into your repository, you can use the cURL program:
+
+$> curl -i -u <username>:<password> --data-binary "@<filename>" -H 'X-Packaging: http://opendepot.org/broker/1.0' -H 'Content-Type: application/zip'  http://your.repo.example.com/path/to/collection
