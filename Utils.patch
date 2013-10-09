@@ -1,0 +1,16 @@
+--- lib/plugins/EPrints/Sword/Utils.mp	2013-10-09 09:40:34.111302400 +0100
++++ lib/plugins/EPrints/Sword/Utils.pm	2013-10-09 09:41:13.210148000 +0100
+@@ -525,7 +525,12 @@
+ 
+         # ID
+         my $uid = $session->make_element( "atom:id" );
+-        $uid->appendChild( $session->make_text( $eprint->get_id ) );
++        $uid->appendChild( $session->make_text( 
++                                    $session->get_repository->get_conf( "base_url" )
++                                  . '/id/eprint/'
++                                  . $eprint->get_id 
++                                    )
++                         );
+         $entry->appendChild( $uid );
+ 
+         # UPDATED
