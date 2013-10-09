@@ -10,9 +10,10 @@ It has been tested with 3.3.5 (the first released version) and 3.3.12 (the curre
 
 INSTALLATION
 ----------------------
-1) Download & unpack the .zip file, or clone the .git repository
 
-2) Install the SWORD v1.3 (legacy) plugin from the Bazaar
+1) Install the SWORD v1.3 (legacy) plugin from the Bazaar
+
+2) Download & unpack the .zip file, or clone the .git repository
 
 3) Use the "Choose File" at the bottom of the "Available packages" list to upload & install the RJ_Broker.epm file
 
